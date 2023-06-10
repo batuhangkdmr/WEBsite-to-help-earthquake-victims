@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anasayfa - Deprem </title>
+    <link rel="stylesheet" href="css1/style.css">
+    <!FONTAWESOME İKONLARIMIZ ->
+        <script src="https://kit.fontawesome.com/ffce289ef2.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1., maximum-scale=1.">
+        <link rel="stylesheet" href="owl/owl.carousel.min.css">
+        <link rel="stylesheet" href="owl/owl.theme.default.min.css">
+
+</head>
+
+<body>
+
+    <!--@@@@@@@@@@@@@@@@@@@@@@@@ LOGO BÖLGESİ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+    <div class="topnav" id="myTopnav">
+        <a href="#" class="active">Quake Help</a>
+        <a href="#yardım">Urgent Needs</a>
+        <a href="#Depremyerleri">Disaster Relief Organizations</a>
+        <a href="#copyright">Contact Form</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+
+
+    <section id="anasayfa">
+        <h2>What to do during an earthquake</h2>
+        <p>1-Stay Calm: It is very important to stay calm during an earthquake. In situations of anxiety and panic, it becomes difficult to make the right decision. Therefore, try to remain calm.</p>
+        <p>2-Be Careful When Leaving Home: After an earthquake, check your home for damage. Be careful and do not pass near collapsed or collapsed structures.</p>
+        <p>3-Do Not Use Elevators: Do not use elevators during an earthquake. Elevators may get stuck or the security system may fail. Instead, use the stairs.</p>
+        <p>4-First Aid: Try to give first aid to people who are injured or in an emergency after an earthquake. Avoid actions that could worsen the condition of an injured person. Don't forget to call an ambulance.</p>
+        <p>5-Do Not Leave the House: Do not leave the house during the earthquake. If the building collapses, the safest place is in a sheltered area inside the building to avoid being trapped under the debris.</p>
+        <p>6-Be Careful When Leaving Home: After an earthquake, check your home for damage. Be careful and do not pass near collapsed or collapsed structures.</p>
+    </section>
+    <!--@@@@@@@@@@@@@@@@@@@@@@@@ YARDIM BÖLGESİ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+    <section>
+        <div id="yardım">
+
+
+            <div>
+                <h4 class="baslikk">General Needs</h4>
+                <a href="emergency.php" class="dd">Emergency Assembly Areas(TOKAT)</a>
+                <a href="Safe%20Gathering%20Areas.php" class="dd">Safe Gathering Areas</a>
+                <a href="evacuation.php" class="dd">Evacuation Locations</a>
+                <a href="temporary.php" class="dd">Temporary Accommodation Areas</a>
+                <a href="#" class="dd">Transportation Assistance</a>
+                <a href="#" class="dd">Food Delivery Places</a>
+                <a href="#" class="dd">Services Outside the Disaster Area</a>
+                <a href="#" class="dd">Gas Stations</a>
+                <a href="#" class="dd">Mobile Toilets</a>
+            </div>
+            <div>
+
+                <h4 class="baslikk">Important Resources</h4>
+                <a href="#" class="dd">Important Phone Numbers</a>
+                <a href="#" class="dd">Important Websites</a>
+                <a href="#" class="dd">Useful Articles</a>
+
+
+            </div>
+            <div>
+                <h4 class="baslikk">Health Services</h4>
+                <a href="#" class="dd">Active Hospitals</a>
+                <a href="#" class="dd">Container pharmacies</a>
+                <a href="#" class="dd">veterinarians</a>
+                <a href="#" class="dd">open pharmacies</a>
+                <p>Last updated Date : <time datetime="2023-05-13T12:00:00Z">13:05:2023 02:35</time></p>
+            </div>
+        </div>
+    </section>
+  <section>
+    <div id="yardım1">
+        <div>
+            <h4 class="baslikk1">For Those Who Want to Help</h4>
+            <div class="link-kutusu">
+                <a href="#" class="dd">Digital Solidarity Campaign</a>
+                <a href="donation.php" class="dd">Donation Links</a>
+                <a href="#" class="dd">Donation Collection Centers</a>
+                <a href="#" class="dd">Blood Donation Centers</a>
+            </div>
+            
+        </div>
+    </div>
+</section>
+    
+    
+    <!--@@@@@@@@@@@@@@@@@@@@@@@@ BİLGİ KISMI RİCINS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+    <section id="Depremyerleri">
+        <div class="container">
+            <h3>Regions</h3>
+
+            <div class="owl-carousel owl-theme">
+                <div class="card item" data-merge=1.5>
+                    <img src="img/hatay.png" alt="" class="img-fluid">
+                    <h5 class="baslikcard">Hatay</h5>
+                    <p class="cardp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, voluptatibus?</p>
+                </div>
+                <!- data merge=1.5 kart aralarındaki boşlukları ayarlıuor->
+                    <div class="card item" data-merge=1.5>
+                        <img src="img/adana.png" alt="" class="img-fluid">
+                        <h5 class="baslikcard">Adana</h5>
+                        <p class="cardp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, voluptatibus?</p>
+                    </div>
+
+                    <div class="card item" data-merge=1.5>
+                        <img src="img/ad%C4%B1yaman.png" alt="" class="img-fluid">
+                        <h5 class="baslikcard">Adıyaman</h5>
+                        <p class="cardp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, voluptatibus?</p>
+                    </div>
+                    <div class="card item" data-merge=1.5>
+                        <img src="img/Diyarbak%C4%B1r.png" alt="" class="img-fluid">
+                        <h5 class="baslikcard">Diyarbakır</h5>
+                        <p class="cardp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, voluptatibus?</p>
+                    </div>
+                    <div class="card item" data-merge=1.5>
+                        <img src="img/gaziantep.png" alt="" class="img-fluid">
+                        <h5 class="baslikcard">Gaziantep</h5>
+                        <p class="cardp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, voluptatibus?</p>
+                    </div>
+                    <div class="card item" data-merge=1.5>
+                        <img src="img/kahramanmares.png" alt="" class="img-fluid">
+                        <h5 class="baslikcard">Kahramanmaraş</h5>
+                        <p class="cardp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, voluptatibus?</p>
+                    </div>
+                    <div class="card item" data-merge=1.5>
+                        <img src="img/kilis.png" alt="" class="img-fluid">
+                        <h5 class="baslikcard">Kilis</h5>
+                        <p class="cardp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, voluptatibus?</p>
+                    </div>
+                    <div class="card item" data-merge=1.5>
+                        <img src="img/malatya.png" alt="" class="img-fluid">
+                        <h5 class="baslikcard">Malatya</h5>
+                        <p class="cardp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, voluptatibus?</p>
+                    </div>
+                    <div class="card item" data-merge=1.5>
+                        <img src="img/osmaniye.png" alt="" class="img-fluid">
+                        <h5 class="baslikcard">Osmaniye</h5>
+                        <p class="cardp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, voluptatibus?</p>
+                    </div>
+                    <div class="card item" data-merge=1.5>
+                        <img src="img/sanliurfa.png" alt="" class="img-fluid">
+                        <h5 class="baslikcard">Şanlıurfa</h5>
+                        <p class="cardp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, voluptatibus?</p>
+                    </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--@@@@@@@@@@@@@@@@@@@@@@@@ AFET YARDIM KURULUŞLARI @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+
+    <section id="hakkimizda">
+
+        <h1>Disaster Relief Organizations</h1>
+        <div class="main-container">
+            <div class="cards">
+                <img src="img/k%C4%B1z%C4%B1lay.png" alt="" />
+                <h4>Kerem Kınık</h4>
+                <p>KIZILAY</p>
+                <div class="social-media">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="img/afad.png" alt="" />
+                <h4>Mehmet Güllüoğlu</h4>
+                <p>AFAD</p>
+                <div class="social-media">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="img/ahbap.png" alt="" />
+                <h4>Haluk Levent</h4>
+                <p>AHBAP</p>
+                <div class="social-media">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--@@@@@@@@@@@@@@@@@@@@@@@@EN ALTTAKİ FORUM YERİ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+    <section id="iletisim">
+        <div class="container">
+            <h3 id="h3iletisim">Emergency and location information</h3>
+
+            <form action="index.php" method="post">
+                <div id="iletisimopak">
+                    <div id="formgroup">
+                        <div id="solform">
+                            <! PLACEHOLDER YER TUTUCU ve REQUİRED ZORUNLU DEMEK ->
+                                <input type="text" name="isim" placeholder="Name Surname" class="form-control">
+                                <input type="text" name="tel" placeholder="Phone Number" required class="form-control">
+                        </div>
+                        <div id="sagform">
+                            <input type="email" name="mail" placeholder="Email" class="form-control">
+                            <input type="text" name="konu" placeholder="Topic Title" required class="form-control">
+                        </div>
+                        <! TEXTAREA AŞŞADAKİ MESAJ BOŞLUĞU->
+                            <textarea name="mesaj" id="" cols="30" placeholder="Write Message" rows="10" required class="form-control"></textarea>
+                            <! AŞŞADAKİ GÖNDER BUTONU ->
+                                <input type="submit" value="Submit">
+
+                    </div>
+ 
+
+
+                </div>
+            </form>
+            <footer>
+
+                <div id="copyright"> 2023 All rights reserved</div>
+                <div id="socialfooter">
+                    <a href="#"><i class="fa-brands fa-facebook social"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram social"></i></a>
+                    <a href="# "><i class="fa-brands fa-twitter social"></i></a>
+
+                </div>
+
+                <a href="#myTopnav"><i class="fa-sharp fa-solid fa-angle-up" id="up"></i></a>
+            </footer>
+
+        </div>
+
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+    <script src="owl/owl.carousel.min.js"></script>
+    <script src="owl/script.js"></script>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
+
+
+<?php 
+
+include("baglanti.php");
+
+if(isset($_POST["isim"], $_POST["tel"], $_POST["mail"], $_POST["konu"], $_POST["mesaj"]))
+{
+    $adsoyad=$_POST["isim"];
+    $telefon=$_POST["tel"];
+    $email=$_POST["mail"];
+    $konu=$_POST["konu"];
+    $mesaj=$_POST["mesaj"];
+    
+    
+    $ekle="INSERT INTO deprem (adsoyad, telefon, email, konu, mesaj) VALUES ('".$adsoyad."','".$telefon."','".$email."','".$konu."','".$mesaj."')";
+    
+    if($baglan->query($ekle)===TRUE)
+    {
+        // Mesaj başarıyla gönderildi, sayfayı yenile
+        echo "<script>alert('Mesajınız başarı ile gelmiştir. ')</script>";
+        echo "<meta http-equiv='refresh' content='0'>";
+    }
+    
+    else{
+        echo "<script>alert('Mesajınız iletilmedi!!!')</script>";
+    }
+    
+}
+
+?>
+
+
+
+

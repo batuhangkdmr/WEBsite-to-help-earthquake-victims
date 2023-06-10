@@ -1,0 +1,711 @@
+/* YILDIZ TÜM SAYFAYI ETKİLER İÇERİKLERİN GENİŞLEMESİNİ ÖNLER */
+* {
+    box-sizing: border-box; /*ширина и высaта*/
+
+}
+
+body {
+    /* burada sayfamı komple google fonts dan aldığım fonts ile şekilini verdim GOOGLE DEN ALDIK
+    VE FONTDA NONİTO DA PROBLEM OLURSA ALTERNATİF OLARAK SANS-SERİF FONTUNA GEÇİCEK*/
+    font-family: 'Nunito', sans-serif;
+    margin: 0px;
+    position: relative; /*konum: göreli @ положение: родственник*/
+    height: 100vh;
+
+
+}
+
+img {
+    max-width: 100%;
+    /*maksimum genişlik* @ Максимальная ширина- /
+    height: auto;  /*  yükseklik:   высота:*/
+}
+
+
+
+
+
+/* banner yeri genişlik veremyiz çünkü kendisi kaplıyor  
+back- attackhment ile sabit duruyor resim */
+#anasayfa {
+    height: 845px;
+    background-image: url("../img/arkares%C4%B1mm.jpg");
+    background-size: cover;
+    /*     arka plan boyutu: kapak;  размер фона: обложка;*/
+    background-position: center;
+    /* arka plan konumu: merkez;    фоновая позиция: центр;*/
+    background-attachment: fixed;
+    /*  arka plan eki: sabit; background-attachment: исправлено;*/
+    background-repeat: no-repeat;
+    /* arka plan tekrarı: tekrar yok; фоновый повтор: без повтора;*/
+    background-blend-mode: darken;
+    /*     arka plan harmanlama modu: koyulaştır; фоновый режим наложения: затемнить; */
+    background-color: rgba(0, 0, 0, 0.3);
+    /* arka plan rengi @ фонaвый цвет::*/
+    /* Arka plan rengi ve şeffaflığı burada ayarlayabilirsiniz */
+}
+
+#anasayfa h2 {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Arka plan rengi ve şeffaflığı burada ayarlayabilirsiniz */
+    padding: 10px;
+    /* İstenilen boşluk değerine göre ayarlayabilirsiniz */
+}
+
+#anasayfa p {
+    color: white;
+    font-size: 22px;
+    text-align: left;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Arka plan rengi ve şeffaflığı burada ayarlayabilirsiniz */
+    padding: 10px;
+    /* İstenilen boşluk değerine göre ayarlayabilirsiniz */
+}
+.topnav {
+    overflow: hidden;
+    /*Taşma : gizli @переполнение */
+    background-color: #3f475f;
+    /*arka plan rengi@ фоновый цвет*/
+}
+
+.topnav a {
+    float: left;
+    /* batmadan yüzmek @  плавать*/
+    display: block;
+    /*görüntülemek@отображать*/
+    color: white;
+    text-align: center;
+    /*Metin hizalama@   выравнивание текста*/
+    padding: 30px 40px;
+    /*dolgu malzemesi@ набивка*/
+    text-decoration: none;
+    /*metin dekorasyonu@ украшение текста*/
+    font-size: 20px;
+    /*yazı Boyutu@ размер шрифта*/
+}
+
+.topnav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.topnav a.active {
+    background-color: #87cefa;
+    color: black;
+    font-size: 30px;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+
+/* blok etiket olduğundan sayfanın tamamını kapsıycak opacity kodu siyah ile resimin arasında bir renk koyuyor ortaya rahat yazı yazalım diye*/
+#black {
+    height: 600px;
+    background-color: black;
+    opacity: 0.5;
+    /*opaklık @@@ непрозрачность*/
+}
+
+/* içerik yazıyı resimin üstüne aldık   transform: translate bu kod ile  */
+
+
+
+#yardım {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #ddd;
+    /*kenarlık üstü @верхняя граница*/
+    border-bottom: 1px solid #ddd;
+    /*     alt kenarlık  @    нижняя граница */
+    padding: 45px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f8ff;
+    font-size: 15px;
+    align-items: flex-start;
+}
+
+#yardım div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 35px;  /*KENAR @ допуск */
+    align-items: center;
+}
+
+.baslikk {
+    font-family: "Nonito", sans-serif;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+
+}
+
+
+
+#yardım div:not(:last-of-type)::after {
+    content: ""; /*içerik @ сaдержание*/
+    flex-grow: 1;
+    height: 1px;
+    background-color: #dddddd;
+    margin: 0 20px;
+    min-height: 50px;
+    
+
+}
+
+#yardım a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 55px;
+    padding: 10px;
+    background-color: blue;
+    border: 1px solid #dddddd;
+    border-radius: 55px;
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+#yardım a:hover {
+    background-color: blue;
+    color: white;
+}
+
+#yardım a:hover .dd {
+    font-size: 15px;
+    color: white;
+}
+
+#yardım p {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 15px;
+
+}
+
+#yardım1 {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 45px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f8ff;
+    font-size: 15px;
+    align-items: flex-start;
+}
+
+#yardım1 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+    
+
+}
+
+.baslikk1 {
+    font-family: "Nonito", sans-serif;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px; /*kenar boşluğu @ нижняя граница */
+    text-transform: uppercase; /*     metin dönüşümü: büyük harf@ преобразование текста: верхний регистр;*/
+    letter-spacing: 1px; /*  harf aralığı @ межбуквенный интервал */
+
+
+}
+
+#yardım1 div:not(:last-of-type)::after {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background-color: #dddddd;
+    margin: 0 20px;
+    min-height: 50px;
+
+}
+
+#yardım1 a {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 55px;
+    padding: 10px;
+    background-color: blue;
+    border: 1px solid #dddddd;
+    border-radius: 55px;
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+#yardım1 a:hover {
+    background-color: blue;
+    color: white;
+}
+
+#yardım1 a:hover .dd {
+    font-size: 15px;
+    color: white;
+}
+
+
+
+/* @@@@ #ler id . lar class @@@@ */
+
+/* Küçük deprem olan yerlerin konumunu ayarlıyoruz */
+#Depremyerleri {
+    height: 845px;
+    background-color: #f8f8ff;
+    padding: 50px;
+    text-align: center;
+}
+
+#Depremyerleri h3 {
+    font-size: 35px;
+    min-height: 85px;
+
+}
+
+/*  display: inline-block; bu kod card ları yan yana koydu */
+.card {
+    width: 320px;
+    height: 350;
+    border: 1px solid #ddd;
+    padding: 0;
+    display: inline-block;
+}
+
+.baslikcard {
+    font-size: 15px;
+    color: #003666;
+}
+
+/* card ların rengini ayarladık */
+.cardp {
+    color: #888;
+}
+
+/* bölgelerin üstüne gelince rengi ayarladık */
+.card:hover {
+    border: 2px solid gray;
+}
+
+
+.cards {
+    display: inline-block;
+    padding: 20px 30px;
+    border-radius: 20px;
+    border: 1px rgba(211, 211, 211, 0.486) solid;
+    margin: 40px;
+    transition: 0.6s;
+}
+
+.cards:hover {
+    transition: 0.6s;
+    box-shadow: 5px 5px 20px lightgray;
+}
+
+.cards img {
+    transition: 0.2s;
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    padding: 1px;
+}
+
+.cards:hover img {
+    transition: 0.2s;
+    outline: 4px solid grey;
+}
+
+.cards p {
+    color: grey;
+}
+
+.social-media a i {
+    color: grey;
+    font-size: large;
+    transition: 0.5s;
+    padding: 15px 0;
+}
+
+.social-media a i:hover {
+    transition: 0.5s;
+    transform: scale(2);
+}
+
+.social-media {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 12px;
+}
+
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* border radius kenarları yuvarlak yapar  en alttaki sosyal medya */
+.social {
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    width: 50px;
+    border-radius: 5px;
+    margin: 5px 10px;
+
+}
+
+/* HAKKIMIZDA BÖLÜMÜ*/
+
+#hakkimizda {
+    text-align: center;
+    padding: 50px;
+    background-color: #f8f8ff;
+}
+
+
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cards img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media a {
+    margin: 5px;
+    color: #333333;
+    font-size: 20px;
+}
+
+.social-media a:hover {
+    color: #0000ff;
+}
+
+/*HAKKIMIZDA BÖLÜMÜ SON*/
+
+/* Team daki sosyal medya amblemlerine mausu sürükleyince renk değiştirir */
+.social:hover {
+    background-color: #888;
+}
+
+#iletisim {
+    height: 10%;
+    background: url(../img/pxfuel.jpg);
+    background-size: cover;
+    padding: 50px;
+    height: auto;
+    text-align: center;
+}
+
+#h3iletisim {
+    color: white;
+
+}
+
+/* 255 255 beyaz  0.5 de alfa--- 30px yukarıdan aşşadan 20px soldan sağdan*/
+#iletisimopak {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px 20px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    height: 550px;
+
+}
+
+#formgroup {
+    width: 700px;
+    float: left;
+    height: 500px;
+    text-align: left;
+}
+
+#solform {
+    width: 49%;
+    float: left;
+
+}
+
+#sagform {
+    width: 49%;
+    float: right;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #495057;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+
+}
+
+textarea {
+    font-family: Arial;
+}
+
+/* cursor SUBMİT YAZISININ ÜSTÜNE GELDİĞİNMİZDE EL ŞEKLİNE GELDİ  SUBMİT BÖLGESİ*/
+input[type="submit"] {
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 10px 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+
+#copyright {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+#up {
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 15px;
+    padding: 10px 12px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+
+
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: left;
+        display: block;
+
+
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    #anasayfa {
+        width: 100%;
+    }
+
+    #anasayfa h2,
+    #anasayfa p {
+        font-size: 15px;
+    }
+
+    #black {
+        width: 100%;
+    }
+
+    #icerik {
+        width: 100%;
+    }
+
+    #hakkimizda {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    #sol {
+        width: 100%;
+    }
+
+    #h5sol {
+        width: 100%;
+    }
+
+    #sag {
+        width: 100%;
+    }
+
+    #psag {
+        width: 100%;
+    }
+
+    #pson {
+        width: 100%;
+    }
+
+    #Depremyerleri {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .baslikcard {
+        width: 100%;
+    }
+
+    .cardp {
+        width: 100%;
+    }
+
+    #yardım {
+        flex-direction: column;
+    }
+
+    .baslikk {
+        font-size: 1.1rem;
+    }
+
+    .dd {
+        font-size: 0.9rem;
+
+    }
+
+    #yardım1 {
+        flex-direction: column;
+    }
+
+    .baslikk1 {
+        font-size: 1.1rem;
+    }
+
+
+
+    #iletisim {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    #h3iletisim {
+        width: 100%;
+    }
+
+    #iletisimopak {
+        width: 100%;
+    }
+
+    #formgroup {
+    width: 100%;
+    float: none;
+    text-align: center;
+    height: auto;
+  }
+
+  #solform, #sagform {
+    width: 100%;
+    float: none;
+  }
+
+  .form-control {
+    width: 90%; /* Kutucukların genişliğini küçültmek için değeri düşürün */
+    font-size: 12px; /* Yazı boyutunu küçültmek için değeri düşürün */
+    margin: 5px; /* Kutucuklar arasındaki boşluğu azaltmak için değeri düşürün */
+  }
+
+    #iletisim footer {
+        position: relative;
+        padding-top: 20px;
+    }
+
+    #iletisim footer input[type="submit"] {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+    #copyright {
+        width: 100%;
+    }
+
+    #socialfooter {
+        width: 100%;
+    }
+
+
+
+
+
+
+
+}

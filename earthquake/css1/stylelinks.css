@@ -1,0 +1,587 @@
+/* YILDIZ TÜM SAYFAYI ETKİLER İÇERİKLERİN GENİŞLEMESİNİ ÖNLER */
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    /* burada sayfamı komple google fonts dan aldığım fonts ile şekilini verdim GOOGLE DEN ALDIK
+    VE FONTDA NONİTO DA PROBLEM OLURSA ALTERNATİF OLARAK SANS-SERİF FONTUNA GEÇİCEK*/
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    position: relative;
+    height: 100vh;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.topnav {
+
+    overflow: hidden;
+    background-color: #3f475f;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 40px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.topnav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.topnav a.active {
+    background-color: #87cefa;
+    color: black;
+    font-size: 30px;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+
+
+
+/* banner yeri genişlik veremyiz çünkü kendisi kaplıyor  
+back- attackhment ile sabit duruyor resim */
+#anasayfa {
+    height: 845px;
+    background-image: url("../img/arkares%C4%B1mm.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Arka plan rengi ve şeffaflığı burada ayarlayabilirsiniz */
+}
+
+#anasayfa h2 {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Arka plan rengi ve şeffaflığı burada ayarlayabilirsiniz */
+    padding: 10px;
+    /* İstenilen boşluk değerine göre ayarlayabilirsiniz */
+}
+
+#anasayfa p {
+    color: white;
+    font-size: 22px;
+    text-align: left;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Arka plan rengi ve şeffaflığı burada ayarlayabilirsiniz */
+    padding: 10px;
+    /* İstenilen boşluk değerine göre ayarlayabilirsiniz */
+}
+
+/* blok etiket olduğundan sayfanın tamamını kapsıycak opacity kodu siyah ile resimin arasında bir renk koyuyor ortaya rahat yazı yazalım diye*/
+#black {
+    height: 600px;
+    background-color: black;
+    opacity: 0.5;
+}
+
+/* içerik yazıyı resimin üstüne aldık   transform: translate bu kod ile  */
+
+
+#yardım {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 45px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f8ff;
+    font-size: 15px;
+    align-items: flex-start;
+}
+
+#yardım div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 35px;
+    align-items: flex-start;
+}
+
+.baslikk {
+    font-family: "Nonito", sans-serif;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#yardım a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 55px;
+    padding: 10px;
+    background-color: blue;
+    border: 1px solid #dddddd;
+    border-radius: 55px;
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+#yardım a.dd {
+    background-color: blue;
+
+}
+
+#yardım h3 {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 15px;
+    margin-top: 35px;
+
+}
+
+#yardım td {
+    justify-content: center;
+    font-size: 20px;
+
+
+}
+
+#yardım td a {
+    color: blue;
+    text-decoration: underline;
+    background-color: transparent;
+    width: 50%;
+    border-radius: 10px;
+}
+
+
+/* @@@@ #ler id . lar class @@@@ */
+
+
+/* border radius kenarları yuvarlak yapar  en alttaki sosyal medya */
+.social {
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    width: 50px;
+    border-radius: 5px;
+    margin: 5px;
+    10px;
+
+}
+
+/* HAKKIMIZDA BÖLÜMÜ*/
+
+#hakkimizda {
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cards img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media a {
+    margin: 5px;
+    color: #333333;
+    font-size: 20px;
+}
+
+.social-media a:hover {
+    color: #0000ff;
+}
+
+/*HAKKIMIZDA BÖLÜMÜ SON*/
+/* Team daki sosyal medya amblemlerine mausu sürükleyince renk değiştirir */
+.social:hover {
+    background-color: #888;
+}
+
+#iletisim {
+    background: url(../img/pxfuel.jpg);
+    background-size: cover;
+    padding: 50px;
+    height: auto;
+    text-align: center;
+}
+
+#h3iletisim {
+    color: white;
+
+}
+
+/* 255 255 beyaz  0.5 de alfa--- 30px yukarıdan aşşadan 20px soldan sağdan*/
+#iletisimopak {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px 20px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    height: 550px;
+
+}
+
+#formgroup {
+    width: 700px;
+    float: left;
+    height: 500px;
+    text-align: left;
+}
+
+#solform {
+    width: 49%;
+    float: left;
+
+}
+
+#sagform {
+    width: 49%;
+    float: right;
+
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #495057;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+
+}
+
+textarea {
+    font-family: Arial;
+}
+
+/* cursor SUBMİT YAZISININ ÜSTÜNE GELDİĞİNMİZDE EL ŞEKLİNE GELDİ  SUBMİT BÖLGESİ*/
+input[type="submit"] {
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 10px 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+
+#copyright {
+    color: white;
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+#up {
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 15px;
+    padding: 10px 12px;
+    margin-top: 20px;
+}
+
+/*TABLO 1.*/
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+    margin-top: 25px;
+}
+
+table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+}
+
+table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+}
+
+table th,
+table td {
+    padding: .625em;
+    text-align: center;
+}
+
+table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+/*TABLO 1. SON*/
+@media (max-width: 768px) {
+
+
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: left;
+        display: block;
+
+
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    #anasayfa {
+        width: 100%;
+    }
+
+    #anasayfa h2,
+    #anasayfa p {
+        font-size: 15px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    #sol {
+        width: 100%;
+    }
+
+    #h5sol {
+        width: 100%;
+    }
+
+    #sag {
+        width: 100%;
+    }
+
+    #psag {
+        width: 100%;
+    }
+
+    #pson {
+        width: 100%;
+    }
+
+    #Depremyerleri {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .baslikcard {
+        width: 100%;
+    }
+
+    .cardp {
+        width: 100%;
+    }
+
+    #yardım {
+        flex-direction: column;
+    }
+
+    .baslikk {
+        font-size: 1.1rem;
+    }
+
+    #yardım td {
+        justify-content: flex-start;
+        font-size: 100%;
+
+
+    }
+
+    #iletisim {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    #h3iletisim {
+        width: 100%;
+    }
+
+    #iletisimopak {
+        width: 100%;
+    }
+
+    #formgroup {
+        width: 100%;
+        float: none;
+        text-align: center;
+        height: auto;
+    }
+
+    #solform,
+    #sagform {
+        width: 100%;
+        float: none;
+    }
+
+    .form-control {
+        width: 90%;
+        /* Kutucukların genişliğini küçültmek için değeri düşürün */
+        font-size: 12px;
+        /* Yazı boyutunu küçültmek için değeri düşürün */
+        margin: 5px;
+        /* Kutucuklar arasındaki boşluğu azaltmak için değeri düşürün */
+    }
+
+    #adres {
+        width: 100%;
+    }
+
+    #adresbaslik {
+        width: 100%;
+    }
+
+    #iletisim footer {
+        position: relative;
+        padding-top: 20px;
+    }
+
+    #iletisim footer input[type="submit"] {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+    /*TABLO 1*/
+    table {
+        border: 0;
+    }
+
+    table caption {
+        font-size: 1.3em;
+    }
+
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
+
+    table td::before {
+        /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+
+    /*TABLO 1 SON*/
+
+
+
+
+
+
+}
